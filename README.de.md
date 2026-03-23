@@ -1,8 +1,15 @@
 # Taski — Aufgabenverwaltung
 
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-3.x-black?logo=flask)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-18-336791?logo=postgresql&logoColor=white)
+![JWT](https://img.shields.io/badge/Auth-JWT-orange)
+![Deployed](https://img.shields.io/badge/Deployed-Render-46E3B7?logo=render&logoColor=white)
+
 Eine Full-Stack-Webanwendung, bei der jeder Benutzer nur seine eigenen Aufgaben sieht.
 
 🔗 **Live-Demo:** https://taski-ti1r.onrender.com
+📄 **API documentation (Swagger):** https://taski-ti1r.onrender.com/apidocs
 
 ---
 
