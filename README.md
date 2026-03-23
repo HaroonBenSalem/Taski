@@ -1,9 +1,17 @@
 🇩🇪 [Auf Deutsch lesen](README.de.md)
+
 # Taski — Task Manager
+
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-3.x-black?logo=flask)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-18-336791?logo=postgresql&logoColor=white)
+![JWT](https://img.shields.io/badge/Auth-JWT-orange)
+![Deployed](https://img.shields.io/badge/Deployed-Render-46E3B7?logo=render&logoColor=white)
 
 A full-stack task manager where every user sees only their own tasks.
 
 🔗 **Live demo:** https://taski-ti1r.onrender.com
+📄 **API documentation (Swagger):** https://taski-ti1r.onrender.com/apidocs
 
 ---
 
@@ -14,6 +22,7 @@ A full-stack task manager where every user sees only their own tasks.
 - Mark tasks as done or delete them
 - Each user sees only their own tasks
 - JWT authentication — stays logged in across sessions
+- REST API with full Swagger / OpenAPI documentation
 
 ## Tech Stack
 
@@ -23,7 +32,21 @@ A full-stack task manager where every user sees only their own tasks.
 | Auth | JWT, bcrypt |
 | Database | PostgreSQL |
 | Frontend | HTML, CSS, JavaScript |
+| API Docs | Flasgger (Swagger UI) |
 | Deployment | Render |
+
+## API Endpoints
+
+Full interactive documentation available at [`/apidocs`](https://taski-ti1r.onrender.com/apidocs)
+
+| Method | Endpoint | Description | Auth |
+|---|---|---|---|
+| POST | `/auth/register` | Create a new account | No |
+| POST | `/auth/login` | Login and get JWT token | No |
+| GET | `/tasks` | Get all tasks | Yes |
+| POST | `/tasks` | Create a new task | Yes |
+| POST | `/tasks/<id>/done` | Toggle task done/undone | Yes |
+| DELETE | `/tasks/<id>` | Delete a task | Yes |
 
 ## Run Locally
 
@@ -50,6 +73,7 @@ python app.py
 ```
 
 Open `http://localhost:5000`
+Open `http://localhost:5000/apidocs` for API documentation
 
 ## Project Structure
 
@@ -63,6 +87,7 @@ Open `http://localhost:5000`
 ```
 
 ## Screenshots
+
 <img width="1920" height="938" alt="image" src="https://github.com/user-attachments/assets/794bad59-a60c-45aa-aa68-638f3bd8bbee" />
 
 <img width="1920" height="939" alt="image" src="https://github.com/user-attachments/assets/c0703906-c5f9-4736-8ac2-dc962f2fe40b" />
