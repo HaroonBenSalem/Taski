@@ -61,3 +61,8 @@ Open `http://localhost:5000`
 ├── schema.sql      # Database tables
 └── templates/      # HTML pages
 ```
+
+## Screenshots
+<img width="1920" height="938" alt="image" src="https://github.com/user-attachments/assets/794bad59-a60c-45aa-aa68-638f3bd8bbee" />
+
+<img width="1920" height="939" alt="image" src="https://github.com/user-attachments/assets/c0703906-c5f9-4736-8ac2-dc962f2fe40b" />
