@@ -288,6 +288,7 @@ def delete_task(current_user, task_id: int):
     task = db.execute(
         "SELECT id FROM tasks WHERE id = %s AND user_id = %s",
         (task_id, current_user["id"]),
+      fetchone=True,
     )
 
     if not task:
